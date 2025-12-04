@@ -1,0 +1,32 @@
+#motivačný-list{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    color: #4f4f4f;
+    min-height: 100px;
+    margin-bottom: 3em;
+
+}
+#motivačný-list h2{
+    text-align: center;
+    margin: 1em 0;
+}
+#motivačný-list p{
+    
+    margin: 1em 0;
+}
+#motivačný-list p span{
+    border-right: #4f4f4f solid 2px;
+}
+#motivačný-list button{
+    position: absolute;
+    right: 60px;
+
+    border: none;
+    color: white;
+    background-color: #547dbf;
+    padding: 0.5em 0.8em;
+    border-radius: 1.1em;
+
+}

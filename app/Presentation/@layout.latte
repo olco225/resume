@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/motivation.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette Web</title>
+
+	{asset? 'main.js'}
+</head>
+
+<body>
+	<header>
+		<ul style="font-size: 1rem;" id="navigation">
+			<li>domov</li>
+			<li><a href="https://oliver-chalupka.sk/moje-vytvory.html">moje výtvory</a></li>
+			<li><a href="https://oliver-chalupka.sk/spetna-vezba">spätná väzba aplikácia</a></li>
+			<li>o mne</li>
+		</ul>
+	</header>
+
+	{include content}
+
+	<footer>
+        <p>&copy; Oliver Chalúpka</p>
+    </footer>
+</body>
+<script src="script/motivationList.js"></script>
+<script src="script/age.js"></script>
+</html>

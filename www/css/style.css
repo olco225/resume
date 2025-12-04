@@ -1,0 +1,112 @@
+html{
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    min-height: 100svh;
+    grid-template-rows: 1fr auto;
+    background-color: #ffffff;
+}
+
+h1{
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 1em ;
+    color: #4f4f4f;
+}
+#základné-údaje{
+    color: #4f4f4f;
+}
+@media only screen and (orientation: landscape){
+    #základné-údaje{
+
+        /*inside*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /*outside*/
+        width: 70%;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (orientation: portrait){
+
+}
+.block-content{
+    font-size: 0.9rem;
+
+    padding: 1em;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(123, 123, 123, 0.558);
+    transition: box-shadow 0.4s ease ,font-size 0.4s ease;
+    
+    margin: 1em;
+}
+.block-content:hover{
+    font-size: 1rem;
+    box-shadow: 4px 4px 6px #547dbf;
+    
+    
+    
+}
+
+.block-content h2{
+    font-size: 1.6em;
+    margin: 0.8em 0;
+}
+.block-content li{
+    list-style: none;
+    margin: 5px;
+}
+/************zručnosti**************/
+@media only screen and (orientation: landscape){
+    #block-content-skills{
+    width: 70% ;
+}
+}
+@media only screen and (orientation: portrait){
+    #block-content-skills{
+        width: 95% ;
+    }
+}
+#block-content-skills{
+    max-width: 850px;
+    margin: 0 auto;
+    color: #4f4f4f;
+}
+#block-content-skills ul{
+    margin: 2em 0;
+}
+#block-content-skills ul li{
+    width: 95%;
+}
+.text-of-skill{
+    display: inline-block;
+    width: 16em;
+}
+.show-level{
+    display: inline-block;
+    width: 50%;
+
+    border: #4f4f4f 2px solid;
+    color: #547dbf;
+    margin-left: 1rem;
+}
+.inner-show{
+    display: inline-block;
+    width: 34%;
+    border-right: #4f4f4f 1px solid;
+    background-color: #547dbf;
+
+}
+#sql-line{
+    width: 20%;
+}
+#anj-line{
+    width: 60%;
+}
