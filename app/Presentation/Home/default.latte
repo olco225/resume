@@ -6,20 +6,19 @@
 		<div class="block-content">
 			<h2>Základné údaje</h2>
 			<ul>
-				<li><strong>celé meno:</strong> Oliver Chalupka</li>
-				<li><strong>narodený:</strong> 19.12.2006</li>
+				<li><strong>celé meno:</strong> {$resumeData->firstname} {$resumeData->secondname}</li>
+				<li><strong>narodený:</strong> {$resumeData->born_age}</li>
 				<li id="age"><strong>vek:</strong> </li>
-				<li><strong>bydlisko:</strong> Slovensko, trenčiansky kraj, Chocholná-Velčice, Chocholná 605</li>
-				<li><strong>vzdelanie:</strong> základná škola, študujem na gymnázium Futurum Trenčín 4. ročník s rozšírením na IT</li>
+				<li><strong>bydlisko:</strong> {$resumeData->place_of_residence}</li>
+				<li><strong>vzdelanie:</strong> {$resumeData->education}</li>
 			</ul>
 		</div>
 		
 		<div class="block-content">
 			<h2>Kontakt</h2>
 			<ul>
-			
-				<li><strong>email:</strong> oliverchalupka225@gmail.com</li>
-				<li><strong>tel.</strong> 0948 897 023</li>
+				<li><strong>email:</strong> {$contactData->email}</li>
+				<li><strong>tel.</strong> {$contactData->phone_number}</li>
 			</ul>
 		</div>
 		

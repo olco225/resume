@@ -12,8 +12,13 @@ final class HomePresenter extends Nette\Application\UI\Presenter{
     function __construct(
         private resumeFacade $resumeFacade,
     ){}
-    public function renderDefalut(){
+    public function renderDefault(){
         $contactData = $this->resumeFacade->getContactData();
+        $resumeData = $this->resumeFacade->getResumeData();
+
         $this->template->contactData = $contactData;
+        $this->template->resumeData = $resumeData;
+
+
     }
 }
