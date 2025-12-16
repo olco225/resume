@@ -15,5 +15,10 @@ final class resumeFacade {
         
         return $resumeData;
     }
+    public function getMotivationLetter(){
+        $motivationLetterData = $this->database->query("Select * from motivation_letter where id = '1' ")->fetch();
+
+        return $motivationLetterData;
+    }
 
 }

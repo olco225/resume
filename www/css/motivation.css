@@ -30,3 +30,37 @@
     border-radius: 1.1em;
 
 }
+.motivation-list-paragraph{
+    text-indent: 3em;
+}
+/**** všeobecné nastavenia**/
+.motivation-letter{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    color: #4f4f4f;
+    min-height: 100px;
+    margin-bottom: 3em;
+
+}
+.motivation-letter h2{
+    text-align: center;
+    margin: 1em 0;
+}
+.motivation-letter button{
+    position: absolute;
+    right: 60px;
+
+    border: none;
+    color: white;
+    background-color: #547dbf;
+    padding: 0.5em 0.8em;
+    border-radius: 1.1em;
+
+}
+
+/***motivačný list v2***/
+.motivation-list-paragraph{
+    text-indent: 3em;
+}

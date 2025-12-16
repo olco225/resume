@@ -56,10 +56,25 @@
 			</ul>
 	</div>
 
-	<div id="motivačný-list">
-		<h2>Motivačný list</h2>
+	<div id="motivačný-list" class="motivation letter">
+		<h2>Motivačný list 1</h2>
 		<p><span id="tabulator-span"></span></p>
 		<button id="tlačítko-motivačného-listu">čítať ďalej</button>
 		
 	</div>
+	<div id="motivačný-list2" class="motivation-letter">
+		<h2>Motivačný list 2</h2>
+		<div id="motivation-text-container">
+
+		</div>
+		
+		<button id="tlačítko-motivačného-listu2">čítať ďalej</button>
+		
+	</div>
+	<script>
+	var motivationTextList = [];
+	{foreach $motivationLetterData as $paragraph }
+		motivationTextList.push({$paragraph});
+	{/foreach}
+	</script>
 </main>

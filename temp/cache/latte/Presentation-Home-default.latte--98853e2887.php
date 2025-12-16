@@ -29,6 +29,19 @@ final class Template_98853e2887 extends Latte\Runtime\Template
 	}
 
 
+	public function prepare(): array
+	{
+		extract($this->params);
+
+		if (!$this->getReferringTemplate() || $this->getReferenceType() === 'extends') {
+			foreach (array_intersect_key(['paragraph' => '76'], $this->params) as $ʟ_v => $ʟ_l) {
+				trigger_error("Variable \$$ʟ_v overwritten in foreach on line $ʟ_l");
+			}
+		}
+		return get_defined_vars();
+	}
+
+
 	/** {block content} on line 1 */
 	public function blockContent(array $ʟ_args): void
 	{
@@ -107,12 +120,33 @@ final class Template_98853e2887 extends Latte\Runtime\Template
 			</ul>
 	</div>
 
-	<div id="motivačný-list">
-		<h2>Motivačný list</h2>
+	<div id="motivačný-list" class="motivation letter">
+		<h2>Motivačný list 1</h2>
 		<p><span id="tabulator-span"></span></p>
 		<button id="tlačítko-motivačného-listu">čítať ďalej</button>
 		
 	</div>
+	<div id="motivačný-list2" class="motivation-letter">
+		<h2>Motivačný list 2</h2>
+		<div id="motivation-text-container">
+
+		</div>
+		
+		<button id="tlačítko-motivačného-listu2">čítať ďalej</button>
+		
+	</div>
+	<script>
+	var motivationTextList = [];
+';
+		foreach ($motivationLetterData as $paragraph) /* line 76 */ {
+			echo '		motivationTextList.push(';
+			echo LR\Filters::escapeJs($paragraph) /* line 77 */;
+			echo ');
+';
+
+		}
+
+		echo '	</script>
 </main>';
 	}
 }

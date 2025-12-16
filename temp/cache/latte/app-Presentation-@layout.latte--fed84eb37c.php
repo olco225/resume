@@ -67,6 +67,9 @@ final class Template_fed84eb37c extends Latte\Runtime\Template
 </body>
 <script src="script/motivationList.js"></script>
 <script src="script/age.js"></script>
+<script>
+	setMotivationLetter(motivationTextList);
+</script>
 </html>
 ';
 	}
