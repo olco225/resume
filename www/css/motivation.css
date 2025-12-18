@@ -50,9 +50,9 @@
 }
 #motivačný-list2 .button-container{
     width: fit-content;
-    position: relative;
+    display: block;
+    margin: 0 auto;
     margin-top: 1.5em ;
-    left: 10em;
 
 }
 #motivačný-list2 .button-container button{
