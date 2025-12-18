@@ -51,15 +51,14 @@ final class Template_fed84eb37c extends Latte\Runtime\Template
 <body>
 	<header>
 		<ul style="font-size: 1rem;" id="navigation">
-			<li>domov</li>
+			<li><a href="https://github.com/olco225">môj github učet</a></li>
 			<li><a href="https://oliver-chalupka.sk/moje-vytvory.html">moje výtvory</a></li>
 			<li><a href="https://oliver-chalupka.sk/spetna-vezba">spätná väzba aplikácia</a></li>
-			<li>o mne</li>
 		</ul>
 	</header>
 
 ';
-		$this->renderBlock('content', [], 'html') /* line 27 */;
+		$this->renderBlock('content', [], 'html') /* line 26 */;
 		echo '
 	<footer>
         <p>&copy; Oliver Chalúpka</p>
