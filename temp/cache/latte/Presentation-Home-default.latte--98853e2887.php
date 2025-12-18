@@ -34,7 +34,7 @@ final class Template_98853e2887 extends Latte\Runtime\Template
 		extract($this->params);
 
 		if (!$this->getReferringTemplate() || $this->getReferenceType() === 'extends') {
-			foreach (array_intersect_key(['paragraph' => '76'], $this->params) as $ʟ_v => $ʟ_l) {
+			foreach (array_intersect_key(['paragraph' => '80'], $this->params) as $ʟ_v => $ʟ_l) {
 				trigger_error("Variable \$$ʟ_v overwritten in foreach on line $ʟ_l");
 			}
 		}
@@ -120,27 +120,31 @@ final class Template_98853e2887 extends Latte\Runtime\Template
 			</ul>
 	</div>
 
-	<div id="motivačný-list" class="motivation letter">
+	<!--<div id="motivačný-list" class="motivation-letter">
 		<h2>Motivačný list 1</h2>
 		<p><span id="tabulator-span"></span></p>
 		<button id="tlačítko-motivačného-listu">čítať ďalej</button>
 		
-	</div>
+	</div> !-->
 	<div id="motivačný-list2" class="motivation-letter">
 		<h2>Motivačný list 2</h2>
 		<div id="motivation-text-container">
 
 		</div>
+		<div class="button-container">
+			<button id="tlačítko-motivačného-listu2">ukázať motivačný list</button>
+			<button id="tlačítko-motivačného-listu2-rýchlo">ukázať motivačný list rýchlo</button>
+		</div>
 		
-		<button id="tlačítko-motivačného-listu2">čítať ďalej</button>
+		
 		
 	</div>
 	<script>
 	var motivationTextList = [];
 ';
-		foreach ($motivationLetterData as $paragraph) /* line 76 */ {
+		foreach ($motivationLetterData as $paragraph) /* line 80 */ {
 			echo '		motivationTextList.push(';
-			echo LR\Filters::escapeJs($paragraph) /* line 77 */;
+			echo LR\Filters::escapeJs($paragraph) /* line 81 */;
 			echo ');
 ';
 
